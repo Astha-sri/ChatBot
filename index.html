@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+<!-- ChatBot -->
+<link rel="stylesheet" type="text/css" href="css/jquery.convform.css">
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.convform.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+
+</head>
+<body>
+<!-- ChatBot -->
+<div class="chat_icon">
+	<i class="fa fa-comments" aria-hidden="true"></i>
+</div>
+
+<div class="chat_box">
+	<div class="my-conv-form-wrapper">
+		<form action="" method="GET" class="hidden">
+
+      <select data-conv-question="Hello! How can I help you" name="category">
+        <option value="Discription">About Disease description?</option>
+        <option value="Solution">About the solution of a problem?</option>
+      </select>
+
+      <div data-conv-fork="category">
+        <div data-conv-case="Discription">
+          <!-- <input type="text" name="domainName" data-conv-question="Please, select your issue.">     -->
+        
+		<select data-conv-question="Please, Select the disease to know about its discription." name="categories">
+			<option value="Hi">Heart Issues?</option>
+			<option value="Oi">Obesity Issue?</option>
+			<option value="pi">Periods Issue?</option>
+		</select>
+		
+		
+		
+		<div data-conv-fork="categories">
+		   	<div data-conv-case="Hi">
+				<input type="text" data-conv-question="A type of disease that affects the heart or blood vessels. The risk of certain heart diseases may be increased by smoking, high blood pressure, high cholesterol, unhealthy diet, lack of exercise, and obesity. The most common heart disease is coronary artery disease (narrow or blocked coronary arteries), which can lead to chest pain, heart attacks, or stroke. Other heart diseases include congestive heart failure, heart rhythm problems, congenital heart disease (heart disease at birth), and endocarditis (inflamed inner layer of the heart). Also called cardiovascular disease.">
+			</div>
+			<div data-conv-case="Oi">
+				<input type="text"  data-conv-question="Obesity is serious because it is associated with poorer mental health outcomes and reduced quality of life. Obesity is also associated with the leading causes of death in the United States and worldwide, including diabetes, heart disease, stroke, and some types of cancer."> 
+			</div>
+			<div data-conv-case="pi">
+				<input type="text" data-conv-question="Irregular periods. Your periods are considered irregular if your menstrual cycle is shorter or longer than average. This means that the time from the first day of your last period up to the start of your next period is less than 24 days or more than 38 days."> 
+			</div>
+		</div>
+	  </div>
+
+
+
+        <div data-conv-case="Solution" data-conv-fork="first-question2">
+          <!-- <input type="text" name="companyName" data-conv-question="Please, tell me the problem you are going through!">  -->
+		  <select data-conv-question="Please, Select the disease to know about its solution." name="category1">
+			<option value="His">Heart Issues?</option>
+			<option value="Ois">Obesity Issue?</option>
+			<option value="pis">Periods Issue?</option>
+		  </select>
+		  <div data-conv-fork="category1">
+			<div data-conv-case="His">
+			 <input type="text" data-conv-question=" Lifestyle changes. You can lower your risk of heart disease by eating a low-fat and low-sodium diet, getting at least 30 minutes of moderate exercise on most days of the week, quitting smoking, and limiting alcohol intake. Medications.">
+		 </div>
+		 <div data-conv-case="Ois">
+			 <input type="text"  data-conv-question="Consume less “bad” fat and more “good” fat,Consume less processed and sugary foods,Eat more servings of vegetables and fruits,Eat plenty of dietary fiber,Engage in regular aerobic activity"> 
+		 </div>
+		 <div data-conv-case="pis">
+			 <input type="text" data-conv-question="Practice yoga. Yoga has been shown to be an effective treatment for different menstrual issues. ...
+			 Maintain a healthy weight. Changes in your weight can affect your period. ...
+			 Exercise regularly. ...
+			 Spice things up with ginger. ...
+			 Add some cinnamon. ...
+			 Get your daily dose of vitamins. ...
+			 Drink apple cider vinegar daily. ...
+			 Eat pineapple."> 
+		 </div>
+	 </div>  
+		  
+    
+	 </div>
+ </div>
+	  
+	  
+	  
+
+      <input type="text" name="name" data-conv-question="Please, Enter your name">
+
+      <input type="text" data-conv-question="Hi {name}, <br> It's a pleasure to meet you." data-no-answer="true">
+
+      <input data-conv-question="Enter your e-mail" data-pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" type="email" name="email" required placeholder="What's your e-mail?">
+
+      <select data-conv-question="Please Conform">
+        <option value="Yes">Confirm</option>
+      </select>
+
+  	</form>
+	</div>
+</div>
+<!-- ChatBot end -->
+
+<header class="header">
+	<div class="container-fluid">
+		<div class="row d-flex justify-content-between">
+			<div class="col-md-auto">
+				<a href="#!" class="logo"><img src="images/logo.png" alt="logo"></a>
+			</div>
+		</div>		
+	</div>
+</header>	
+
+
+<div class="portfolio-section" id="portfolio">
+	<div id="port_pop_pic_bg"></div>
+	<div id="port_pop_pic"></div>
+	<div class="container-fluid">
+		<h2 class="text-center bdr-btm bdr-btm-center">ISSUES</h2>
+		<div class="row">
+			<div class="col-md-4">
+				<div class="portfolio-box" style="background-image: url('images/port1.jpeg');">
+					<h3>Obesity issue</h3>
+				</div>		
+			</div>
+			<div class="col-md-4">
+				<div class="portfolio-box" style="background-image: url('images/port2.jpeg');">
+					<h3>We will overcome</h3>
+				</div>		
+			</div>
+			<div class="col-md-4">
+				<div class="portfolio-box" style="background-image: url('images/port3.jpeg');">
+					<h3>Regular Exercise</h3>
+				</div>		
+			</div>
+			<div class="col-md-4">
+				<div class="portfolio-box" style="background-image: url('images/port4.jpeg');">
+					<h3>We are together in this</h3>
+				</div>		
+			</div>
+			<div class="col-md-4">
+				<div class="portfolio-box" style="background-image: url('images/port5.jpeg');">
+					<h3>PCOS Problems</h3>
+				</div>		
+			</div>
+			<div class="col-md-4">
+				<div class="portfolio-box" style="background-image: url('images/port6.jpeg');">
+					<h3>Hormonal Problems</h3>
+				</div>		
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	portfolioList = document.querySelectorAll('.portfolio-box');
+	portfolioList.forEach(function(portfolioPic) {
+		portfolioPic.addEventListener('click',function(){
+			bg = this.style.backgroundImage;
+			document.getElementById('port_pop_pic_bg').classList.add("active")
+			document.getElementById('port_pop_pic').style.backgroundImage = bg
+			document.getElementById('port_pop_pic').classList.add("active")
+		});	
+	})
+	document.getElementById('port_pop_pic_bg').addEventListener('click',function(){
+			document.getElementById('port_pop_pic_bg').classList.remove("active")
+			document.getElementById('port_pop_pic').classList.remove("active")
+	})
+</script>
+
+</body>
+</html>
